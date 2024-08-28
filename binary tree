@@ -1,0 +1,12 @@
+function inOrderTraversalIterative(root):
+    stack = empty stack
+    current = root
+    
+    while stack is not empty or current is not null:
+        if current is not null:
+            stack.push(current)
+            current = current.left
+        else:
+            current = stack.pop()
+            visit(current)
+            current = current.right
